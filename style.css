@@ -89,6 +89,14 @@ a {
     animation: scanningAnim 2s ease-in-out infinite;
 }
 
+.profile-photo img {
+    border-radius: 50%;
+    width: 150px; /* Adjust the size as needed */
+    height: 150px; /* Adjust the size as needed */
+    object-fit: cover;
+    border: 3px solid #fff; /* Optional: Add a border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: Add a shadow */
+}
 @keyframes glitchAnim {
     0% {
         text-shadow: 0 0 5px var(--neon-cyan), 0 0 10px var(--neon-cyan);
