@@ -1,749 +1,373 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Neel Belsare | AI-DS | IoT | Web & App Development | Robotics</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="icon" href="image/n.png"
-
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neel Belsare | AI-DS | IoT | Web & App Development | Robotics</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image/n.png"
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
 </head>
-
 <body>
+    <!-- Loading Animation -->
+    <div class="loader-container">
+        <div class="loader">
+            <div class="glitch-text">Neel Belsare</div>
+            <div class="scanning-line"></div>
+        </div>
+    </div>
 
-    <!-- Loading Animation -->
+    <!-- Navigation -->
+    <nav class="cyberpunk-nav">
+        <div class="logo">NB</div>
+        <div class="menu-toggle">
+            <div class="hamburger"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="neon-link">Home</a></li>
+            <li><a href="#about" class="neon-link">About</a></li>
+            <li><a href="#projects" class="neon-link">Projects</a></li>
+            <li><a href="#achievements" class="neon-link">Achievements</a></li>
+            <li><a href="#blog" class="neon-link">Blog</a></li>
+            <li><a href="#contact" class="neon-link">Contact</a></li>
+            <li><a href="https://www.instagram.com/theneelbelsare?igsh=ZW4zdmxmMjA5aDdj" class="neon-link">
+                <i class="fab fa-instagram"></i> Instagram</a></li>
+           <li><a href="https://www.linkedin.com/in/neel-belsare-719b9a314?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="neon-link">
+               <i class="fab fa-linkedin"></i> LinkedIn</a></li>
+           <li><a href="https://github.com/NeelBelsare" class="neon-link">
+               <i class="fab fa-github"></i> GitHub</a></li>   
+        </ul>
+    </nav>
 
-    <div class="loader-container">
+    <!-- Scroll Arrow -->
+    <div class="scroll-arrow">
+        <div class="arrow-down"></div>
+    </div>
 
-        <div class="loader">
-
-            <div class="glitch-text">Neel Belsare</div>
-
-            <div class="scanning-line"></div>
-
-        </div>
-
-    </div>
-
-
-
-    <!-- Navigation -->
-
-    <nav class="cyberpunk-nav">
-
-        <div class="logo">NB</div>
-
-        <div class="menu-toggle">
-
-            <div class="hamburger"></div>
-
-        </div>
-
-        <ul class="nav-links">
-
-            <li><a href="#home" class="neon-link">Home</a></li>
-
-            <li><a href="#about" class="neon-link">About</a></li>
-
-            <li><a href="#projects" class="neon-link">Projects</a></li>
-
-            <li><a href="#achievements" class="neon-link">Achievements</a></li>
-
-            <li><a href="#blog" class="neon-link">Blog</a></li>
-
-            <li><a href="#contact" class="neon-link">Contact</a></li>
-
-            <li><a href="https://www.instagram.com/theneelbelsare?igsh=ZW4zdmxmMjA5aDdj" class="neon-link">
-
-                <i class="fab fa-instagram"></i> Instagram</a></li>
-
-           <li><a href="https://www.linkedin.com/in/neel-belsare-719b9a314?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="neon-link">
-
-               <i class="fab fa-linkedin"></i> LinkedIn</a></li>
-
-           <li><a href="https://github.com/NeelBelsare" class="neon-link">
-
-               <i class="fab fa-github"></i> GitHub</a></li>   
-
-        </ul>
-
-    </nav>
-
-
-
-    <!-- Scroll Arrow -->
-
-    <div class="scroll-arrow">
-
-        <div class="arrow-down"></div>
-
-    </div>
-
-
-
-   <!-- Home Section -->
-
+   <!-- Home Section -->
 <section id="home" class="section home-section">
-
-    <div id="particles-js" class="particles-container"></div>
-
-    <div class="cyberpunk-grid"></div>
-
-    <div class="home-content">
-
-        <h1 class="glitch-name" data-text="Neel Belsare">Neel Belsare</h1>
-
-        <div class="tagline">
-
-            <span class="neon-text">AI-DS</span> | 
-
-            <span class="neon-text-alt">IoT</span> | 
-
-            <span class="neon-text">Web & App Development</span> | 
-
-            <span class="neon-text-alt">Robotics</span>
-
-        </div>
-
-        <p class="intro-text">Innovator, Developer, and Tech Enthusiast exploring AI, IoT, and automation.</p>
-
-        <div class="cta-container">
-
-            <a href="#projects" class="cyberpunk-button">View Projects</a>
-
-            <a href="#contact" class="cyberpunk-button-alt">Contact Me</a>
-
-        </div>
-
-    </div>
-
-    <div class="floating-elements-container">
-
-        <div class="floating-element esp32"></div>
-
-        <div class="floating-element ai-circuit"></div>
-
-        <div class="floating-element iot-icon"></div>
-
-    </div>
-
+    <div id="particles-js" class="particles-container"></div>
+    <div class="cyberpunk-grid"></div>
+    <div class="home-content">
+        <h1 class="glitch-name" data-text="Neel Belsare">Neel Belsare</h1>
+        <div class="tagline">
+            <span class="neon-text">AI-DS</span> | 
+            <span class="neon-text-alt">IoT</span> | 
+            <span class="neon-text">Web & App Development</span> | 
+            <span class="neon-text-alt">Robotics</span>
+        </div>
+        <p class="intro-text">Innovator, Developer, and Tech Enthusiast exploring AI, IoT, and automation.</p>
+        <div class="cta-container">
+            <a href="#projects" class="cyberpunk-button">View Projects</a>
+            <a href="#contact" class="cyberpunk-button-alt">Contact Me</a>
+        </div>
+    </div>
+    <div class="floating-elements-container">
+        <div class="floating-element esp32"></div>
+        <div class="floating-element ai-circuit"></div>
+        <div class="floating-element iot-icon"></div>
+    </div>
 </section>
 
-
-
-  <!-- About Section -->
-
+  <!-- About Section -->
 <section id="about" class="section about-section">
-
-    <div class="section-title">
-
-        <h2 class="cyber-heading">About Me</h2>
-
-        <div class="title-underline"></div>
-
-    </div>
-
-    <div class="about-container">
-
-        <div class="profile-photo">
-
-            <img src="image/WhatsApp Image 2025-02-25 at 7.03.09 PM.jpeg" alt="Neel Belsare">
-
-        </div>
-
-        <div class="about-text">
-
-           <p>Hi, I'm Neel Belsare, an AI & IoT enthusiast passionate about building futuristic projects that merge automation and intelligence. I specialize in AI, IoT, Robotics, and Full-Stack Development, constantly exploring innovative solutions to real-world problems. As a B.Tech student in Artificial Intelligence & Data Science at Jawaharlal Nehru Engineering College, MGMU, I collaborate with like-minded peers, to push the boundaries of technology. My projects aim to bridge the gap between smart automation and human-centric design, making technology more accessible and impactful.</p>
-
-        </div>
-
-       <div class="skills-container">
-
-                <h3 class="cyber-heading-small">Skills</h3>
-
-                <div class="skill-item">
-
-                    <div class="skill-name">AI & Machine Learning</div>
-
-                    <div class="skill-bar">
-
-                        <div class="skill-progress" data-progress="90"></div>
-
-                    </div>
-
-                </div>
-
-                <div class="skill-item">
-
-                    <div class="skill-name">IoT & Embedded Systems</div>
-
-                    <div class="skill-bar">
-
-                        <div class="skill-progress" data-progress="85"></div>
-
-                    </div>
-
-                </div>
-
-                <div class="skill-item">
-
-                    <div class="skill-name">Web Development</div>
-
-                    <div class="skill-bar">
-
-                        <div class="skill-progress" data-progress="80"></div>
-
-                    </div>
-
-                </div>
-
-                <div class="skill-item">
-
-                    <div class="skill-name">App Development</div>
-
-                    <div class="skill-bar">
-
-                        <div class="skill-progress" data-progress="75"></div>
-
-                    </div>
-
-                </div>
-
-                <div class="skill-item">
-
-                    <div class="skill-name">Robotics & Automation</div>
-
-                    <div class="skill-bar">
-
-                        <div class="skill-progress" data-progress="80"></div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="tech-stack">
-
-                <h3 class="cyber-heading-small">Tech Stack</h3>
-
-                <div class="tech-icons">
-
-                    <div class="tech-icon" data-tech="Python">Python</div>
-
-                    <div class="tech-icon" data-tech="TensorFlow">TensorFlow</div>
-
-                    <div class="tech-icon" data-tech="ESP32">ESP32</div>
-
-                    <div class="tech-icon" data-tech="Arduino">Arduino</div>
-
-                    <div class="tech-icon" data-tech="Raspberry Pi">Raspberry Pi</div>
-
-                    <div class="tech-icon" data-tech="Flask">Flask</div>
-
-                    <div class="tech-icon" data-tech="React">React</div>
-
-                    <div class="tech-icon" data-tech="Flutter">Flutter</div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
+    <div class="section-title">
+        <h2 class="cyber-heading">About Me</h2>
+        <div class="title-underline"></div>
+    </div>
+    <div class="about-container">
+        <div class="profile-photo">
+            <img src="image/WhatsApp Image 2025-02-25 at 7.03.09 PM.jpeg" alt="Neel Belsare">
+        </div>
+        <div class="about-text">
+           <p>Hi, I'm Neel Belsare, an AI & IoT enthusiast passionate about building futuristic projects that merge automation and intelligence. I specialize in AI, IoT, Robotics, and Full-Stack Development, constantly exploring innovative solutions to real-world problems. As a B.Tech student in Artificial Intelligence & Data Science at Jawaharlal Nehru Engineering College, MGMU, I collaborate with like-minded peers, to push the boundaries of technology. My projects aim to bridge the gap between smart automation and human-centric design, making technology more accessible and impactful.</p>
+        </div>
+       <div class="skills-container">
+                <h3 class="cyber-heading-small">Skills</h3>
+                <div class="skill-item">
+                    <div class="skill-name">AI & Machine Learning</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">IoT & Embedded Systems</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">Web Development</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="80"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">App Development</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="75"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">Robotics & Automation</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="80"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tech-stack">
+                <h3 class="cyber-heading-small">Tech Stack</h3>
+                <div class="tech-icons">
+                    <div class="tech-icon" data-tech="Python">Python</div>
+                    <div class="tech-icon" data-tech="TensorFlow">TensorFlow</div>
+                    <div class="tech-icon" data-tech="ESP32">ESP32</div>
+                    <div class="tech-icon" data-tech="Arduino">Arduino</div>
+                    <div class="tech-icon" data-tech="Raspberry Pi">Raspberry Pi</div>
+                    <div class="tech-icon" data-tech="Flask">Flask</div>
+                    <div class="tech-icon" data-tech="React">React</div>
+                    <div class="tech-icon" data-tech="Flutter">Flutter</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-
-    <!-- Projects Section -->
-
-    <section id="projects" class="section projects-section">
-
-        <div class="section-title">
-
-            <h2 class="cyber-heading">Projects</h2>
-
-            <div class="title-underline"></div>
-
-        </div>
-
-       <div class="project-card" data-project="bluemetrice">
-
-    <div class="project-card-inner">
-
-        <div class="project-front">
-
-            <img src="image/DALL·E 2025-02-25 10.20.29 - A futuristic smart water quality monitoring device named BlueMetrice. The device is compact and sleek, with a glowing digital screen displaying real-t.webp" alt="BlueMetrice Logo" class="project-image"> 
-
-            <div class="project-icon water-icon"></div>
-
-            <h3 class="project-title">BlueMetrice</h3>
-
-            <p class="project-subtitle">Smart Water Quality Monitor</p>
-
-        </div>
-
-        </div>
-
-</div>
-
-                    <div class="project-back">
-
-                        <h3 class="project-title">BlueMetrice</h3>
-
-                        <ul class="project-details">
-
-                            <li>ESP32-based real-time water monitoring system</li>
-
-                            <li>Hosted on GitHub Pages, data accessible via ngrok</li>
-
-                            <li>Features: Sensor integration, live dashboard, JSON backend</li>
-
-                        </ul>
-
-                        <a href="#" class="project-link">View Project</a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            
-
-            <div class="project-card" data-project="smarthome">
-
-                <div class="project-card-inner">
-
-                    <div class="project-front">
-
-                        <div class="project-icon home-icon"></div>
-
-                        <h3 class="project-title">Smart Home Automation</h3>
-
-                        <p class="project-subtitle">ESP32-Based System</p>
-
-                    </div>
-
-                    <div class="project-back">
-
-                        <h3 class="project-title">Smart Home Automation</h3>
-
-                        <ul class="project-details">
-
-                            <li>Control lights, fans, and appliances remotely</li>
-
-                            <li>Web-based interface with real-time monitoring</li>
-
-                        </ul>
-
-                        <a href="#" class="project-link">View Project</a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            
-
-            <div class="project-card" data-project="neurabyte">
-
-                <div class="project-card-inner">
-
-                    <div class="project-front">
-
-                        <div class="project-icon bot-icon"></div>
-
-                        <h3 class="project-title">NeuraByte AI & Bots</h3>
-
-                        <p class="project-subtitle">Automation Solutions</p>
-
-                    </div>
-
-                    <div class="project-back">
-
-                        <h3 class="project-title">NeuraByte AI & Bots</h3>
-
-                        <ul class="project-details">
-
-                            <li>Telegram bot for assignment marketplace</li>
-
-                            <li>AI-powered automation projects</li>
-
-                        </ul>
-
-                        <a href="#" class="project-link">View Project</a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            
-
-            <div class="project-card" data-project="reminderClock">
-
-                <div class="project-card-inner">
-
-                    <div class="project-front">
-
-                        <div class="project-icon clock-icon"></div>
-
-                        <h3 class="project-title">IoT-Connected Reminder Clock</h3>
-
-                        <p class="project-subtitle">ESP32 with LCD Display</p>
-
-                    </div>
-
-                    <div class="project-back">
-
-                        <h3 class="project-title">IoT-Connected Reminder Clock</h3>
-
-                        <ul class="project-details">
-
-                            <li>ESP32 with LCD display, web-controlled reminders</li>
-
-                            <li>Integrated Bluetooth speaker for voice alerts</li>
-
-                        </ul>
-
-                        <a href="#" class="project-link">View Project</a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            
-
-            <div class="project-card" data-project="bombDefusal">
-
-                <div class="project-card-inner">
-
-                    <div class="project-front">
-
-                        <div class="project-icon game-icon"></div>
-
-                        <h3 class="project-title">ESP32 Bomb Defusal Game</h3>
-
-                        <p class="project-subtitle">Interactive IoT Game</p>
-
-                    </div>
-
-                    <div class="project-back">
-
-                        <h3 class="project-title">ESP32 Bomb Defusal Game</h3>
-
-                        <ul class="project-details">
-
-                            <li>Interactive countdown-based game with real-time response</li>
-
-                        </ul>
-
-                        <a href="#" class="project-link">View Project</a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            
-
-            <div class="project-card" data-project="voiceAssistant">
-
-                <div class="project-card-inner">
-
-                    <div class="project-front">
-
-                        <div class="project-icon voice-icon"></div>
-
-                        <h3 class="project-title">ESP32 Voice Assistant</h3>
-
-                        <p class="project-subtitle">Alexa-like IoT Device</p>
-
-                    </div>
-
-                    <div class="project-back">
-
-                        <h3 class="project-title">ESP32 Voice Assistant</h3>
-
-                        <ul class="project-details">
-
-                            <li>AI-powered voice commands with ESP32</li>
-
-                        </ul>
-
-                        <a href="#" class="project-link">View Project</a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- Achievements Section -->
-
-    <section id="achievements" class="section achievements-section">
-
-        <div class="section-title">
-
-            <h2 class="cyber-heading">Achievements & Collaborations</h2>
-
-            <div class="title-underline"></div>
-
-        </div>
-
-        <div class="achievements-container">
-
-            <div class="achievement-list">
-
-                <h3 class="cyber-heading-small">Key Highlights</h3>
-
-                <ul class="cyber-list">
-
-                    <li>Founder of NeuraByte – A student-led AI & IoT development team</li>
-
-                    <li>Built BlueMetrice – Smart Water Monitoring System</li>
-
-                    <li>Created a Telegram bot marketplace for assignments</li>
-
-                    <li>Developed multiple ESP32-based automation projects</li>
-
-                    <li>Active participant in tech hackathons & AI/IoT research</li>
-
-                </ul>
-
-            </div>
-
-            <div class="collaborations">
-
-                <h3 class="cyber-heading-small">Collaborations</h3>
-
-                <ul class="cyber-list">
-
-                    <li>Worked with college teams and developers on IoT & AI projects</li>
-
-                    <li>Open-source contributions on GitHub</li>
-
-                </ul>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- Blog Section -->
-
-    <section id="blog" class="section blog-section">
-
-        <div class="section-title">
-
-            <h2 class="cyber-heading">Blog</h2>
-
-            <div class="title-underline"></div>
-
-        </div>
-
-        <div class="blog-container">
-
-            <article class="blog-card">
-
-                <div class="blog-date">01.15.2025</div>
-
-                <h3 class="blog-title">How I Built BlueMetrice: A Smart Water Monitor</h3>
-
-                <p class="blog-excerpt">Take a deep dive into the development process behind BlueMetrice, from sensor selection to cloud integration...</p>
-
-                <a href="#" class="read-more">Read More</a>
-
-            </article>
-
-            
-
-            <article class="blog-card">
-
-                <div class="blog-date">12.20.2024</div>
-
-                <h3 class="blog-title">ESP32 vs. Raspberry Pi: Which One to Choose?</h3>
-
-                <p class="blog-excerpt">Comparing two popular platforms for IoT projects with practical examples and use cases...</p>
-
-                <a href="#" class="read-more">Read More</a>
-
-            </article>
-
-            
-
-            <article class="blog-card">
-
-                <div class="blog-date">11.05.2024</div>
-
-                <h3 class="blog-title">Building a Telegram Bot for Automation</h3>
-
-                <p class="blog-excerpt">Step-by-step guide to creating your own Telegram bot for automation tasks with Python...</p>
-
-                <a href="#" class="read-more">Read More</a>
-
-            </article>
-
-            
-
-            <article class="blog-card">
-
-                <div class="blog-date">10.10.2024</div>
-
-                <h3 class="blog-title">AI & IoT: The Future of Smart Devices</h3>
-
-                <p class="blog-excerpt">Exploring the convergence of artificial intelligence and Internet of Things technologies...</p>
-
-                <a href="#" class="read-more">Read More</a>
-
-            </article>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- Contact Section -->
-
-    <section id="contact" class="section contact-section">
-
-        <div class="section-title">
-
-            <h2 class="cyber-heading">Contact Me</h2>
-
-            <div class="title-underline"></div>
-
-        </div>
-
-        <div class="contact-container">
-
-            <form class="contact-form">
-
-                <div class="form-group">
-
-                    <input type="text" id="name" class="cyber-input" required>
-
-                    <label for="name" class="cyber-label">Name</label>
-
-                    <div class="input-glow"></div>
-
-                </div>
-
-                <div class="form-group">
-
-                    <input type="email" id="email" class="cyber-input" required>
-
-                    <label for="email" class="cyber-label">Email</label>
-
-                    <div class="input-glow"></div>
-
-                </div>
-
-                <div class="form-group">
-
-                    <textarea id="message" class="cyber-textarea" required></textarea>
-
-                    <label for="message" class="cyber-label">Message</label>
-
-                    <div class="input-glow"></div>
-
-                </div>
-
-                <button type="submit" class="cyberpunk-button-submit">Send Message</button>
-
-            </form>
-
-            <div class="social-links">
-
-                <a href="https://www.instagram.com/theneelbelsare?igsh=ZW4zdmxmMjA5aDdj" class="social-link" target="_blank">
-
-                    <div class="social-icon instagram-icon"></div>
-
-                    <span>Instagram</span>
-
-                </a>
-
-                <a href="https://github.com/NeelBelsare class="social-link" target="_blank">
-
-                    <div class="social-icon github-icon"></div>
-
-                    <span>GitHub</span>
-
-                </a>
-
-                <a href="https://www.linkedin.com/in/neel-belsare-719b9a314?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"_blank">
-
-                    <div class="social-icon telegram-icon"></div>
-
-                    <span>Linkedin</span>
-
-                </a>
-
-                <a href="mailto:neel@neurabyte.com" class="social-link">
-
-                    <div class="social-icon email-icon"></div>
-
-                    <span>Email</span>
-
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- Footer -->
-
-    <footer class="cyberpunk-footer">
-
-        <div class="footer-content">
-
-            <div class="footer-logo">NB</div>
-
-            <div class="footer-text">© 2025 Neel Belsare| Made with NeuraByte</div>
-
-        </div>
-
-    </footer>
-
-
-
-    <script src="script.js"></script>
-
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="section-title">
+            <h2 class="cyber-heading">Projects</h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="projects-container">
+            <div class="project-card" data-project="bluemetrice">
+                <div class="project-card-inner">
+                    <div class="project-front">
+                        <div class="project-icon water-icon"></div>
+                        <h3 class="project-title">BlueMetrice</h3>
+                        <p class="project-subtitle">Smart Water Quality Monitor</p>
+                    </div>
+                    <div class="project-back">
+                        <h3 class="project-title">BlueMetrice</h3>
+                        <ul class="project-details">
+                            <li>ESP32-based real-time water monitoring system</li>
+                            <li>Hosted on GitHub Pages, data accessible via ngrok</li>
+                            <li>Features: Sensor integration, live dashboard, JSON backend</li>
+                        </ul>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card" data-project="smarthome">
+                <div class="project-card-inner">
+                    <div class="project-front">
+                        <div class="project-icon home-icon"></div>
+                        <h3 class="project-title">Smart Home Automation</h3>
+                        <p class="project-subtitle">ESP32-Based System</p>
+                    </div>
+                    <div class="project-back">
+                        <h3 class="project-title">Smart Home Automation</h3>
+                        <ul class="project-details">
+                            <li>Control lights, fans, and appliances remotely</li>
+                            <li>Web-based interface with real-time monitoring</li>
+                        </ul>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card" data-project="neurabyte">
+                <div class="project-card-inner">
+                    <div class="project-front">
+                        <div class="project-icon bot-icon"></div>
+                        <h3 class="project-title">NeuraByte AI & Bots</h3>
+                        <p class="project-subtitle">Automation Solutions</p>
+                    </div>
+                    <div class="project-back">
+                        <h3 class="project-title">NeuraByte AI & Bots</h3>
+                        <ul class="project-details">
+                            <li>Telegram bot for assignment marketplace</li>
+                            <li>AI-powered automation projects</li>
+                        </ul>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card" data-project="reminderClock">
+                <div class="project-card-inner">
+                    <div class="project-front">
+                        <div class="project-icon clock-icon"></div>
+                        <h3 class="project-title">IoT-Connected Reminder Clock</h3>
+                        <p class="project-subtitle">ESP32 with LCD Display</p>
+                    </div>
+                    <div class="project-back">
+                        <h3 class="project-title">IoT-Connected Reminder Clock</h3>
+                        <ul class="project-details">
+                            <li>ESP32 with LCD display, web-controlled reminders</li>
+                            <li>Integrated Bluetooth speaker for voice alerts</li>
+                        </ul>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card" data-project="bombDefusal">
+                <div class="project-card-inner">
+                    <div class="project-front">
+                        <div class="project-icon game-icon"></div>
+                        <h3 class="project-title">ESP32 Bomb Defusal Game</h3>
+                        <p class="project-subtitle">Interactive IoT Game</p>
+                    </div>
+                    <div class="project-back">
+                        <h3 class="project-title">ESP32 Bomb Defusal Game</h3>
+                        <ul class="project-details">
+                            <li>Interactive countdown-based game with real-time response</li>
+                        </ul>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card" data-project="voiceAssistant">
+                <div class="project-card-inner">
+                    <div class="project-front">
+                        <div class="project-icon voice-icon"></div>
+                        <h3 class="project-title">ESP32 Voice Assistant</h3>
+                        <p class="project-subtitle">Alexa-like IoT Device</p>
+                    </div>
+                    <div class="project-back">
+                        <h3 class="project-title">ESP32 Voice Assistant</h3>
+                        <ul class="project-details">
+                            <li>AI-powered voice commands with ESP32</li>
+                        </ul>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section achievements-section">
+        <div class="section-title">
+            <h2 class="cyber-heading">Achievements & Collaborations</h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="achievements-container">
+            <div class="achievement-list">
+                <h3 class="cyber-heading-small">Key Highlights</h3>
+                <ul class="cyber-list">
+                    <li>Founder of NeuraByte – A student-led AI & IoT development team</li>
+                    <li>Built BlueMetrice – Smart Water Monitoring System</li>
+                    <li>Created a Telegram bot marketplace for assignments</li>
+                    <li>Developed multiple ESP32-based automation projects</li>
+                    <li>Active participant in tech hackathons & AI/IoT research</li>
+                </ul>
+            </div>
+            <div class="collaborations">
+                <h3 class="cyber-heading-small">Collaborations</h3>
+                <ul class="cyber-list">
+                    <li>Worked with college teams and developers on IoT & AI projects</li>
+                    <li>Open-source contributions on GitHub</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section blog-section">
+        <div class="section-title">
+            <h2 class="cyber-heading">Blog</h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="blog-container">
+            <article class="blog-card">
+                <div class="blog-date">01.15.2025</div>
+                <h3 class="blog-title">How I Built BlueMetrice: A Smart Water Monitor</h3>
+                <p class="blog-excerpt">Take a deep dive into the development process behind BlueMetrice, from sensor selection to cloud integration...</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+            
+            <article class="blog-card">
+                <div class="blog-date">12.20.2024</div>
+                <h3 class="blog-title">ESP32 vs. Raspberry Pi: Which One to Choose?</h3>
+                <p class="blog-excerpt">Comparing two popular platforms for IoT projects with practical examples and use cases...</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+            
+            <article class="blog-card">
+                <div class="blog-date">11.05.2024</div>
+                <h3 class="blog-title">Building a Telegram Bot for Automation</h3>
+                <p class="blog-excerpt">Step-by-step guide to creating your own Telegram bot for automation tasks with Python...</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+            
+            <article class="blog-card">
+                <div class="blog-date">10.10.2024</div>
+                <h3 class="blog-title">AI & IoT: The Future of Smart Devices</h3>
+                <p class="blog-excerpt">Exploring the convergence of artificial intelligence and Internet of Things technologies...</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="section-title">
+            <h2 class="cyber-heading">Contact Me</h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="contact-container">
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" class="cyber-input" required>
+                    <label for="name" class="cyber-label">Name</label>
+                    <div class="input-glow"></div>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" class="cyber-input" required>
+                    <label for="email" class="cyber-label">Email</label>
+                    <div class="input-glow"></div>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" class="cyber-textarea" required></textarea>
+                    <label for="message" class="cyber-label">Message</label>
+                    <div class="input-glow"></div>
+                </div>
+                <button type="submit" class="cyberpunk-button-submit">Send Message</button>
+            </form>
+            <div class="social-links">
+                <a href="https://www.instagram.com/theneelbelsare?igsh=ZW4zdmxmMjA5aDdj" class="social-link" target="_blank">
+                    <div class="social-icon instagram-icon"></div>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://github.com/NeelBelsare class="social-link" target="_blank">
+                    <div class="social-icon github-icon"></div>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/neel-belsare-719b9a314?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"_blank">
+                    <div class="social-icon telegram-icon"></div>
+                    <span>Linkedin</span>
+                </a>
+                <a href="mailto:neel@neurabyte.com" class="social-link">
+                    <div class="social-icon email-icon"></div>
+                    <span>Email</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="cyberpunk-footer">
+        <div class="footer-content">
+            <div class="footer-logo">NB</div>
+            <div class="footer-text">© 2025 Neel Belsare| Made with NeuraByte</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
